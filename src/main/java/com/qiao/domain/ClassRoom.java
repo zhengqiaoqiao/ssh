@@ -1,4 +1,4 @@
-package com.qiao.model.pojo;
+package com.qiao.domain;
 
 import java.util.HashSet;
 import java.util.Set;

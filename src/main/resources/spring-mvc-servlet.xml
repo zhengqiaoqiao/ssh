@@ -40,4 +40,17 @@
             <value>.jsp</value>
         </property>
     </bean>
+    
+    <mvc:interceptors>  
+        <mvc:interceptor>  
+            <!--设置拦截的路径-->  
+            <mvc:mapping path="/user1/*" />
+            <bean class="com.qiao.interceptor.Interceptor1"></bean>  
+        </mvc:interceptor>  
+        <mvc:interceptor>  
+            <!--设置拦截的路径-->  
+            <mvc:mapping path="/user/*" />
+            <bean class="com.qiao.interceptor.Interceptor2"></bean>  
+        </mvc:interceptor>  
+    </mvc:interceptors>  
 </beans>

@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.qiao.dao.UserDao;
-import com.qiao.model.pojo.User;
+import com.qiao.domain.User;
 import com.qiao.util.JdbcUtil;
 import com.qiao.util.JsonUtil;
 import com.qiao.util.PoolUtil;

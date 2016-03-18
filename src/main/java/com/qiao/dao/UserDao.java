@@ -5,16 +5,19 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+
+import org.apache.log4j.Logger;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.qiao.model.pojo.User;
+import com.qiao.domain.User;
 import com.qiao.util.JdbcUtil;
 
 @Repository
 public class UserDao extends HibernateDao{
+	private final Logger LOGGER = Logger.getLogger(UserDao.class);
 	@Resource
 	private JdbcTemplate jdbcTemplate;
 	@Resource

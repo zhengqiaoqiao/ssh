@@ -1,4 +1,4 @@
-package com.qiao.model.pojo;
+package com.qiao.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

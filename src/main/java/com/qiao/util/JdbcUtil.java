@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 
 import org.springframework.stereotype.Component;
 
-import com.qiao.model.pojo.User;
+import com.qiao.domain.User;
 
 @Component
 public class JdbcUtil {

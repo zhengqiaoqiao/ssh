@@ -15,7 +15,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.Transaction;
 
-import com.qiao.model.pojo.User;
+import com.qiao.domain.User;
 import com.qiao.util.JedisUtil;
 
 

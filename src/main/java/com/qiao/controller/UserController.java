@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.qiao.model.pojo.User;
+import com.qiao.domain.User;
 import com.qiao.service.UserService;
 import com.qiao.util.JedisUtil;
 import com.qiao.util.JsonUtil;
@@ -20,6 +21,7 @@ import com.qiao.util.JsonUtil;
 @RequestMapping("/user")
 @Scope("prototype")
 public class UserController {
+	private final Logger LOGGER = Logger.getLogger(UserController.class);
 	@Resource
 	private UserService userService;
 	
